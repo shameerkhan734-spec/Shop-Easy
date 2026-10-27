@@ -1,0 +1,17 @@
+{
+  "name": "shopeasy-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ShopEasy e-commerce REST API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.0"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy | Online Store</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>ShopEasy</h1>
+    <p>Your simple online shopping store</p>
+  </header>
+
+  <main class="container">
+    <div class="section-heading">
+      <h2>Featured Products</h2>
+      <button id="refresh-button">Refresh products</button>
+    </div>
+
+    <p id="status" role="status">Loading products...</p>
+    <section id="products" class="products"
+             aria-label="Product list"></section>
+
+    <section class="order-section">
+      <h2>Find Your Order</h2>
+      <form id="order-form">
+        <label for="order-id">Order ID</label>
+        <input id="order-id" type="number" min="1" required>
+        <button type="submit">Check order</button>
+      </form>
+      <pre id="order-result" aria-live="polite"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>ShopEasy — AWS and DevOps learning project</p>
+  </footer>
+</body>
+</html>
